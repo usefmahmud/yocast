@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name": "Science Podcast",
+        "description": "بودكاست علمي جدا جدا",
+        "artwork": "https://res.cloudinary.com/usefmahmud/image/upload/v1639486130/yocast/images/podcast_2_artwork.jpg",
+        "episodes": [
+            {
+                "title": "الحلة الأولي",
+                "description": "الحلقة الأولي تتحدث عن العلم",
+                "file_name": "https://res.cloudinary.com/usefmahmud/video/upload/v1639497817/yocast/audio/%D9%83%D9%84%D9%83_%D8%B9%D9%84%D9%89_%D8%A8%D8%B9%D8%B6%D9%83_%D8%AC%D9%85%D9%8A%D9%84_-_%D8%A8%D9%88%D8%AF%D9%83%D8%A7%D8%B3%D8%AA_%D8%B9%D9%84%D9%85%D9%8A_%D8%AC%D8%AF%D8%A7_jkxp4p.mp4",
+                "artwork": "https://res.cloudinary.com/usefmahmud/image/upload/v1639492927/yocast/images/Working-in-China-in-2020-Guide_v5gyql.jpg",
+                "number": 1
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "حياة أو موت",
+        "description": "بودكاست حياه أو موت",
+        "artwork": "https://res.cloudinary.com/usefmahmud/image/upload/v1639492927/yocast/images/Working-in-China-in-2020-Guide_v5gyql.jpg",
+        "episodes": [
+            {
+                "title": "الحلة الأولي",
+                "description": "الحلقة الأولي تتحدث عن العلم",
+                "file_name": "episode_2.mp3",
+                "artwork": "episode_2_artwork.jpg",
+                "number": 1
+            },
+            {
+                "title": "الحلة الثانية",
+                "description": "الحلقة الثانية تتحدث عن العلم",
+                "file_name": "episode_3.mp3",
+                "artwork": "episode_3_artwork.jpg",
+                "number": 2
+            }
+        ]
+    }
+]

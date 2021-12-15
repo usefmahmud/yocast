@@ -1,0 +1,29 @@
+.player{
+    position: fixed;
+    background-color: #2D4263;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);    
+    max-width: 800px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+    .player__controls{
+        display: flex;
+        
+
+        .controler{
+            margin: 0px 10px;
+            cursor: pointer;
+
+            .icon{
+                color: #eee;
+                font-size: 25px;
+            }
+        }
+    }
+}

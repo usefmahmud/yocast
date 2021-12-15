@@ -1,0 +1,37 @@
+.navbar{
+    background-color: transparent;
+
+    display: flex;
+    padding: 15px 300px;
+
+    .logo{
+        margin-right: auto;
+
+        a{
+            font-family: 'Nunito';
+            color: #07689F;
+            text-decoration: none;
+            font-size: 40px;
+            font-weight: 800;
+            user-select: none;
+
+            span{
+                color: #FC997C;
+            }
+        }
+    }
+
+    @media (max-width: 1220px) {
+        padding: 15px 200px;
+    }
+
+    @media (max-width: 900px) {
+        padding: 15px 30px;
+
+        .logo{
+            a{
+                font-size: 30px;
+            }
+        }
+    }
+}

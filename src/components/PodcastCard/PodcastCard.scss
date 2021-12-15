@@ -1,0 +1,90 @@
+// #C7C8CE
+
+.podcast-card{
+    width: 100%;
+    // background-color: rgba($color: #2D4263, $alpha: 0.4);
+    margin-bottom: 20px;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+    transition-property: background-color, transform;
+    border-radius: 5px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px;
+    text-decoration: none;
+
+    &:hover{
+        // background-color: rgba($color: #2D4263, $alpha: 1);
+        transform: scale(1.01);
+
+        .podcast__artwork{
+            .artwork__overlay{
+                opacity: 0.3;
+            }
+
+            .play__icon{
+                opacity: 1;
+            }
+        }
+    }
+
+    .podcast__artwork{
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        overflow: hidden;
+
+        img{
+            max-height: 100%;
+        }
+
+        .artwork__overlay{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color: #C84B31;
+            backdrop-filter: blur(1px);
+            opacity: 0;
+            transition: 0.2s;
+            transition-property: opacity;
+        }
+    }
+
+    .podcast__info{
+        padding-left: 20px;
+        flex: 1;
+        position: relative;
+
+        .podcast__title{
+            font-family: 'Tajawal';
+            color: #EEEEEE;
+            font-weight: 700;
+            font-size: 25px;
+            margin-bottom: 5px;
+            width: 100%;
+        }
+
+        .podcast__description{
+            font-family: 'Tajawal';
+            color: #e2e2e2;
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+        .episodes__number{
+            position: absolute;
+            bottom: 5px;
+            color: #EEEEEE;
+            font-size: 14px;
+        }
+    }
+}
