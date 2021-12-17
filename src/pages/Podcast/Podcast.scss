@@ -1,0 +1,94 @@
+.podcast-page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    // width: 100vw;
+        
+
+    .podcast-info{
+        max-width: 1100px;
+        width: 100%;
+        margin-top: 20px;
+        margin: 0 50px;
+        position: relative;
+    
+        display: flex;
+
+        &::after{
+            content: '';
+            position: absolute;
+            height: 1px;
+            max-width: 500px;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba($color: #2D4263, $alpha: 0.7);
+            border-radius: 50px;
+            bottom: -25px;
+        }
+    
+        .podcast__artwork{
+            height: 200px;
+            width: 200px;
+            border-radius: 5px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+    
+            img{
+                max-height: 100%;
+            }
+        }
+    
+        .info{
+            position: relative;
+            flex: 1;
+    
+            .podcast__title{
+                font-family: 'Tajawal';
+                color: #EEEEEE;
+                font-weight: 700;
+                font-size: 25px;
+                margin-bottom: 5px;
+                width: 100%;
+            }
+    
+            .podcast__description{
+                font-family: 'Tajawal';
+                color: #e2e2e2;
+                opacity: 0.9;
+                font-size: 16px;
+            }
+    
+            .episodes__number{
+                position: absolute;
+                bottom: 5px;
+                color: #EEEEEE;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .episodes__container{
+        max-width: 50%;
+        width: 100%;
+        padding-top: 70px;
+        padding-bottom: 120px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        @media (max-width: 1200px) {
+            max-width: 70%;
+        }
+        @media (max-width: 900px) {
+            max-width: 85%;
+        }
+    }
+}
